@@ -341,11 +341,29 @@ new Sortable(weee, {
     animation: 150,
     ghostClass: 'sortable-ghost'
 });*/
-
+/*
 if ($('#weee').text().trim().length == 0) {
     alert("empty");
 }
 
 if (!$.trim($('#weee').html()).length) {
     alert("empty");
+}*/
+
+let interval;
+let start = Date.now();
+
+
+interval = setInterval(function() {
+    checkWee()
+}, 500); //in milliseconds
+
+
+function checkWee() {
+    let we = document.getElementById("weee");
+    if (we.children.length == 0) {
+        let endTime = Date.now();
+        clearInterval(interval);
+        we.innerHTML = "Du hast es geschafft. Du hast " + (endTime - start) / 1000 + "Sekunden gebraucht";
+    }
 }

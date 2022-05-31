@@ -1,55 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&display=swap');
-#rod {
-    position: relative;
-    margin-top: 50px;
-    margin-left: 150px;
-    width: 2px;
-    height: 150px;
-    border-radius: 5px;
-    transform-origin: 50% 0%;
-    transform: rotate(60deg);
-    background-color: green;
-}
-
 body {
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.linky {
-    text-decoration: none;
-    display: block;
+header {
+    height: 10%;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
 }
 
-#rod {
-    position: relative;
-    margin-top: 50px;
-    margin-left: 150px;
-    width: 2px;
-    height: 150px;
-    border-radius: 5px;
-    transform-origin: 50% 0%;
-    transform: rotate(60deg);
-    background-color: green;
-}
-
-#pivot {
-    position: absolute;
-    top: -5px;
-    left: -3px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: black;
-}
-
-#ball {
-    position: absolute;
-    bottom: -10px;
-    left: -10px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: orange;
+section {
+    width: 100%;
+    margin: 0 auto;
 }
 
 li {
@@ -79,4 +48,329 @@ li a {
 li a:hover:not(.active) {
     Color: Tomato;
     font-size: 2rem;
+    text-decoration: none;
 }
+
+.specialbutton {
+    background-color: #44c767;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.specialbutton:hover {
+    background-color: #5cbf2a;
+}
+
+.specialbutton:active {
+    position: relative;
+    top: 1px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: bisque;
+    height: 50rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    gap: 1rem;
+}
+
+.divis {
+    background-color: tomato;
+    width: 25%;
+    height: 100px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+
+/*
+.wee {
+    width: 70%;
+    margin: 0 auto;
+    background-color: bisque;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    gap: 1rem;
+}*/
+
+.box {
+    height: 150px;
+    width: 150px;
+    border: solid 3px #ccc;
+    margin: 10px;
+    /* align items in the box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+.item {
+    width: 10%;
+    height: 100px;
+    background-color: tomato;
+    margin: 0 auto;
+}*/
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+.boxpink {
+    height: 150px;
+    width: 150px;
+    border: 3px solid rgb(255, 202, 194);
+    margin: 10px;
+    /* align items in the box */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxdark {
+    height: 150px;
+    width: 150px;
+    border: 3px solid rgb( 100, 129, 179);
+    margin: 10px;
+    /* align items in the box */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxbaby {
+    height: 150px;
+    width: 150px;
+    border: 3px solid rgb( 168, 200, 255);
+    margin: 10px;
+    /* align items in the box */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.drag-over-baby {
+    border: 3px dashed rgb( 168, 200, 255);
+}
+
+.drag-over-pink {
+    border: 3px dashed rgb(255, 202, 194);
+}
+
+.drag-over-dark {
+    border: 3px dashed rgb( 100, 129, 179);
+}
+
+
+/*
+.wee {
+    width: 70%;
+    margin: 0 auto;
+    background-color: bisque;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    gap: 1rem;
+}*/
+
+.wee {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wee2 {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 100px;
+    height: 140px;
+    width: 22%;
+    margin: 2% auto;
+    /*  margin-bottom: 2%;*/
+    /* background-position: center;*/
+    justify-content: flex-start;
+}
+
+#item {
+    background-color: rgb(255, 202, 194);
+}
+
+#item2 {
+    background-color: rgb( 168, 200, 255);
+}
+
+#item3 {
+    background-color: rgb( 168, 200, 255);
+}
+
+#item4 {
+    background-color: rgb( 168, 200, 255);
+}
+
+#item5 {
+    background-color: rgb( 100, 129, 179);
+}
+
+#item6 {
+    background-color: rgb(255, 202, 194);
+}
+
+#item7 {
+    background-color: rgb( 100, 129, 179);
+    ;
+}
+
+#item8 {
+    background-color: rgb( 100, 129, 179);
+}
+
+#item9 {
+    background-color: rgb(255, 202, 194);
+}
+
+#item10 {
+    background-color: rgb( 168, 200, 255);
+}
+
+#item11 {
+    background-color: rgb(255, 202, 194);
+}
+
+#item12 {
+    background-color: rgb( 100, 129, 179);
+}
+
+.hell-blau {
+    background-color: rgb( 168, 200, 255);
+}
+
+.dunkel-blau {
+    background-color: rgb(100, 129, 179);
+}
+
+.pink {
+    background-color: rgb(255, 202, 194);
+}
+
+
+/*POP up Code*/
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* The actual popup */
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+
+/* Popup arrow */
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+/* Toggle this class - hide and show the popup */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*
+.wee:empty {
+    background-color: tomato;
+}*/

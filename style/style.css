@@ -18,6 +18,7 @@ header {
 
 section {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -97,7 +98,8 @@ li a:hover:not(.active) {
     width: 100%;
     text-align: center;
     color: grey;
-    font-size: 1.5rem;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 
@@ -213,6 +215,10 @@ li a:hover:not(.active) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: grey;
 }
 
 .wee2 {
@@ -221,6 +227,15 @@ li a:hover:not(.active) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.wee3 {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .item {
@@ -292,6 +307,11 @@ li a:hover:not(.active) {
 
 .pink {
     background-color: rgb(255, 202, 194);
+}
+
+.div-btn-rage {
+    margin: 6% auto;
+    justify-content: flex-start;
 }
 
 
@@ -369,8 +389,128 @@ li a:hover:not(.active) {
     }
 }
 
+#myButton {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    justify-content: flex-start;
+    font-size: 30px;
+    border-radius: 8px;
+    height: 4rem;
+    width: 20rem;
+    box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+    margin: 2% auto;
+    background-color: rgb(179, 153, 100);
+    letter-spacing: 0.7px;
+}
+
+.btn-rage {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 8px;
+    height: 4rem;
+    width: 20rem;
+    box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+    background-color: rgb(203, 68, 74);
+    letter-spacing: 0.7px;
+}
+
 
 /*
 .wee:empty {
     background-color: tomato;
 }*/
+
+
+/*-- rage Page--*/
+
+.goback {
+    height: 10%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /*cursor: url('http://anuary.com/dev/hp/pad3/public/images/hand-cursor.png'), pointer;*/
+}
+
+
+/*
+.computer {
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}*/
+
+
+/* Stuff*/
+
+canvas {
+    background-size: cover;
+}
+
+.flexy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.computer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 0;
+}
+
+#imageGallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#image {
+    width: 70%;
+    cursor: url('/img/cursor.png'), auto;
+}
+
+#image:active {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.3s;
+}
+
+h1 {
+    display: inline;
+    padding: 0;
+    font-size: 40px;
+}
+
+@keyframes shake {
+    30% {
+        transform: translate(5px, 4px) rotate(3deg);
+    }
+}
+
+#disapear {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+}

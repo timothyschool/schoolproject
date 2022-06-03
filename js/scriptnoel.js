@@ -64,6 +64,9 @@
 //     }
 // }
 
+
+let closeTracking = 0;
+
 // Collect all the icons as variables
 
 const icon_1 = document.querySelector("#myModal_1")
@@ -128,6 +131,7 @@ function animate() {
 
 // add close functionality
 close_1.onclick = function() {
+    closeTracking++
     console.log('close');
     icon_1.style.display = "none"
         // set icone to display block after 5 seconds
@@ -135,6 +139,7 @@ close_1.onclick = function() {
 }
 
 close_2.onclick = function() {
+    closeTracking++
     console.log('close');
     icon_2.style.display = "none"
         // set icone to display block after 5 seconds
@@ -142,18 +147,21 @@ close_2.onclick = function() {
 }
 
 close_3.onclick = function() {
+    closeTracking++
     console.log('close');
     icon_3.style.display = "none"
         // set icone to display block after 5 seconds
 }
 
 close_4.onclick = function() {
+    closeTracking++
     console.log('close');
     icon_4.style.display = "none"
         // set icone to display block after 5 seconds
 }
 
 close_5.onclick = function() {
+    closeTracking++
     console.log('close');
     icon_5.style.display = "none"
         // set icone to display block after 5 seconds
@@ -166,5 +174,41 @@ btn.onclick = function() {
     icon_3.style.display = "block";
     icon_4.style.display = "block";
     icon_5.style.display = "block";
+    startTimer();
+    document.getElementById("myBtn").style.display = "none"
+    closeTracking = 0
+
 
 }
+
+
+
+/*TIMER*/
+
+let start;
+let interval;
+
+function startTimer() {
+    start = Date.now();
+
+    interval = setInterval(function() {
+        track()
+    }, 100); //in milliseconds
+}
+
+function track() {
+
+    const millis = Date.now() - start;
+    document.getElementById("time").innerHTML = 'Seconds passed = ' + millis / 1000;
+    if (closeTracking >= 5) {
+        stopTimer();
+        document.getElementById("myBtn").style.display = "block"
+    }
+
+}
+
+function stopTimer() {
+    clearInterval(interval);
+}
+
+startTimer()

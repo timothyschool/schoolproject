@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-* .titel {
+ul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+li a {
+    color: white;
+}
+
+#time {
+    font-size: 1rem;
+}
+
+*.titel {
     color: black;
     font-family: 'Gruppo', cursive;
     font-size: 5rem;
@@ -16,14 +30,17 @@
 #myBtn {
     font-family: 'Gruppo', cursive;
     font-size: 2rem;
+    display: none;
     font-weight: bolder;
+    width: 250px;
+    height: 250px;
     background-color: beige;
     border-radius: 100%;
     border-width: 6px;
     text-align: center;
     padding: 30px 50px;
-    margin-left: 42%;
-    margin-right: 45%;
+    /*margin-left: 42%;
+    margin-right: 45%;*/
     cursor: pointer;
 }
 
@@ -162,5 +179,8 @@ height: 85vh;
     /*width: 100%;*/
     background-size: cover;
     background-image: url(/Bilder/Hintergrund.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     /*background-color: cadetblue;*/
 }

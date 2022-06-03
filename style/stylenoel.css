@@ -42,8 +42,9 @@ li a {
     border-width: 6px;
     text-align: center;
     padding: 30px 50px;
-    /*margin-left: 42%;
-    margin-right: 45%;*/
+    z-index: 1;
+    position: fixed;
+    margin-top: 22.5%;
     cursor: pointer;
 }
 

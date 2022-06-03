@@ -199,7 +199,7 @@ function startTimer() {
 function track() {
 
     const millis = Date.now() - start;
-    document.getElementById("time").innerHTML = 'Seconds passed = ' + millis / 1000;
+    document.getElementById("time").innerHTML = 'mach kli fürschi  ' + millis / 1000;
     if (closeTracking >= 5) {
         stopTimer();
         document.getElementById("myBtn").style.display = "block"

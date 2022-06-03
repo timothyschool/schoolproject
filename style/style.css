@@ -570,3 +570,7 @@ h1 {
 #gears2:hover {
     animation: shake 0.5s;
 }
+
+.portrait {
+    width: 50%;
+}

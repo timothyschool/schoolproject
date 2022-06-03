@@ -44,6 +44,6 @@ button.onclick = function() {
     count += 1;
 
     if (count == 9) {
-        window.location.href = "test.html";
+        window.location.href = "index.html";
     }
 };

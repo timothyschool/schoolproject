@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 ul {
     position: absolute;
     top: 0px;
@@ -10,25 +11,27 @@ li a {
 }
 
 #time {
-    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
 }
 
-*.titel {
-    /*color: black;
-    font-family: 'Gruppo', cursive;
-    font-size: 5rem;*/
+.titel {
+    color: black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 6rem;
     text-align: center;
+    margin-top: 20%;
 }
 
 .exercise {
     color: black;
-    font-family: 'Gruppo', cursive;
-    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
     text-align: center;
 }
 
 #myBtn {
-    font-family: 'Gruppo', cursive;
+    font-family: 'Amatic SC', cursive;
     font-size: 2rem;
     display: none;
     font-weight: bolder;

@@ -44,6 +44,6 @@ button.onclick = function() {
     count += 1;
 
     if (count == 9) {
-        window.location.href = "index.html";
+        window.location.href = "tim.html";
     }
 };

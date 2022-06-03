@@ -20,10 +20,10 @@ box1.ondragstart = function() {
     /*zwei*/
 
 //const jet2 = document.getElementById("disapear2");
-jet.onclick = function() {
+/*jet.onclick = function() {
     jet.style.diplay = "none";
     console.log("closed")
-}
+}*/
 const box2 = document.getElementById("item3");
 box2.ondragstart = function() {
         let image2 = jet.querySelector("img")
@@ -100,7 +100,7 @@ box6.ondragstart = function() {
 
     setTimeout(function() {
         jet.style.display = "none";
-    }, 7 * 1000)
+    }, 15 * 1000)
 }
 const box7 = document.getElementById("item7");
 box7.ondragstart = function() {
@@ -111,7 +111,7 @@ box7.ondragstart = function() {
 
     setTimeout(function() {
         jet.style.display = "none";
-    }, 7 * 1000)
+    }, 15 * 1000)
 }
 const box8 = document.getElementById("item8");
 box8.ondragstart = function() {
@@ -122,7 +122,7 @@ box8.ondragstart = function() {
 
     setTimeout(function() {
         jet.style.display = "none";
-    }, 7 * 1000)
+    }, 15 * 1000)
 }
 
 const box10 = document.getElementById("item10");

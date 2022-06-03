@@ -14,9 +14,11 @@ li a {
 }
 
 *.titel {
-    color: black;
+    /*color: black;
     font-family: 'Gruppo', cursive;
-    font-size: 5rem;
+    font-size: 5rem;*/
+    width: 1000px;
+    height: 1000px;
     text-align: center;
 }
 

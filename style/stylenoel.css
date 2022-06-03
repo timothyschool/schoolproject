@@ -17,15 +17,13 @@ li a {
     /*color: black;
     font-family: 'Gruppo', cursive;
     font-size: 5rem;*/
-    width: 1000px;
-    height: 1000px;
     text-align: center;
 }
 
 .exercise {
     color: black;
     font-family: 'Gruppo', cursive;
-    font-size: 2rem;
+    font-size: 20px;
     text-align: center;
 }
 

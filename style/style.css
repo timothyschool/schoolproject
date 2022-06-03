@@ -14,14 +14,20 @@ header {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    content-align: center;
 }
 
 section {
     width: 100%;
-    height: 100%;
+    height: 90%;
     margin: 0 auto;
+    text-align: center;
 }
+
+
+/*
+.secti {
+    text-align: center;
+}*/
 
 li {
     display: inline;
@@ -518,4 +524,49 @@ h1 {
     top: 0px;
     left: 0px;
     display: none;
+}
+
+.gears {
+    Width: 45%;
+    height: 90%;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.grinds {
+    width: 90%;
+    height: 85vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.paragraph {
+    padding-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    align: center;
+}
+
+.title1 {
+    color: tomato;
+}
+
+.my {
+    Width: 80%;
+    height: 90%;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+#gears1:hover {
+    animation: shake 0.5s;
+}
+
+#gears2:hover {
+    animation: shake 0.5s;
 }

@@ -182,7 +182,7 @@ height: 85vh;
 .hintergrund {
     /*width: 100%;*/
     background-size: cover;
-    background-image: url(Bilder/Hintergrund.jpg);
+    background-image: url(...Bilder/Hintergrund.jpg);
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -565,12 +565,18 @@ h1 {
 
 #gears1:hover {
     animation: shake 0.5s;
+    color: tomato;
 }
 
 #gears2:hover {
     animation: shake 0.5s;
+    color: tomato;
 }
 
 .portrait {
     width: 50%;
+}
+
+.portrait1 {
+    width: 70%;
 }

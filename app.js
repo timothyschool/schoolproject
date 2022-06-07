@@ -140,12 +140,12 @@ const box11 = document.getElementById("item11");
 box11.ondragstart = function() {
         let image11 = jet.querySelector("img")
         console.log(image11)
-        image11.src = "img/Todo3.png"
+        image11.src = "img/Pop.gif"
         jet.style.display = "block";
 
         setTimeout(function() {
             jet.style.display = "none";
-        }, 5 * 1000)
+        }, 15 * 1000)
     }
     /*
             //6 

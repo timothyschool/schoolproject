@@ -127,9 +127,9 @@ box8.ondragstart = function() {
 
 const box10 = document.getElementById("item10");
 box10.ondragstart = function() {
-    let image8 = jet.querySelector("img")
-    console.log(image8)
-    image8.src = "img/Ballon_2.gif"
+    let image10 = jet.querySelector("img")
+    console.log(image10)
+    image10.src = "img/Ballon_2.gif"
     jet.style.display = "block";
 
     setTimeout(function() {
@@ -138,9 +138,21 @@ box10.ondragstart = function() {
 }
 const box11 = document.getElementById("item11");
 box11.ondragstart = function() {
-        let image11 = jet.querySelector("img")
-        console.log(image11)
-        image11.src = "img/Pop.gif"
+    let image11 = jet.querySelector("img")
+    console.log(image11)
+    image11.src = "img/Pop.gif"
+    jet.style.display = "block";
+
+    setTimeout(function() {
+        jet.style.display = "none";
+    }, 15 * 1000)
+}
+
+const box12 = document.getElementById("item12");
+box12.ondragstart = function() {
+        let image12 = jet.querySelector("img")
+        console.log(image12)
+        image12.src = "img/Brain_2.gif"
         jet.style.display = "block";
 
         setTimeout(function() {
